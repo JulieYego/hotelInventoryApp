@@ -1,0 +1,15 @@
+<!-- Interpolation -->
+<h1>"Welcome to {{ hotelName }}"</h1>
+<!-- Property Binding -->
+Number of Rooms is:
+<div [innerText]="numberOfRooms"></div>
+<!-- Event Binding -->
+<button (click)="toggle()">Toggle</button>
+<div [hidden]="hideRooms">
+    Number of Rooms is:
+    <div [innerText]="numberOfRooms"></div>
+</div>
+
+<div *ngIf="rooms.availableRooms > 0">
+    Rooms List
+</div>
